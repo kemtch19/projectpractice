@@ -1,17 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- Como tal esto es para colocar información entre componentes -->
+  <router-link to="/">Home</router-link>
+  <router-link to="/list"> List</router-link>
+  <router-view></router-view>
 </template>
 
+<!-- para cambiar de manera dinámica entre vistas utilizamos vue router -->
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: {},
+};
 </script>
 
 <style>
